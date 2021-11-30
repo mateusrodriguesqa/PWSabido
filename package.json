@@ -1,0 +1,22 @@
+{
+  "name": "TestPlaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "set ENV=qa && set BROWSER=chromium && set HEADLESS=false && jest",
+    "ci-qa": "ENV=qa BROWSER=chromium HEADLESS=true jest"
+  },
+  "keywords": [],
+  "author": "Mateus Rodrigues",
+  "license": "ISC",
+  "dependencies": {
+    "expect-playwright": "^0.8.0",
+    "jest-html-reporters": "^2.1.6",
+    "jest-playwright-preset": "^1.7.0",
+    "playwright": "^1.16.3"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
